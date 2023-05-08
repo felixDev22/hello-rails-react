@@ -20,7 +20,6 @@ const greetingSlice = createSlice({
     builder.addCase(FetchGreeting.fulfilled, (state, action) => {
       state.isFulfilled = true;
       state.data = action.payload;
-      // console.log(action.payload);
     });
   },
 });
